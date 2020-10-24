@@ -70,38 +70,16 @@ function prevFunction() {
 
 
 
-//////////////// keyboard next
+//////////////// keyboard 
+document.addEventListener("keydown", event => {
+    if (event.keyCode == 27) {
+        lite.style.display = "none"
+    } else if (event.keyCode == 39) {
+        nextphoto();
+    } else if (event.keyCode == 37) {
+        prevphoto();
+    }
 
-document.addEventListener("keydown",keyNext())
-
-function keyNext(e){
-  if( e.keycode == 39){
-    nextFunction();
-  }
-
-}
-
-//////////////// keyboard prev
-
-document.addEventListener("keydown",keyPrev())
-
-function keyPrev(e){
-  if( e.keycode == 37){
-    prevFunction();
-  }
-
-}
-
-//////////////// keyboard colse
-
-document.addEventListener("keydown",keyClose())
-
-function keyClose(e){
-  if( e.keycode == 27){
-    closeFunction();
-    
-  }
-
-}
+});
 
 
