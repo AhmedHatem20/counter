@@ -1,0 +1,68 @@
+body
+{
+    font-family: 'segoe ui light';
+    background-color: #302b36;
+}
+
+.item
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+    height: 430px;
+
+}
+.item-caption
+{
+    position: absolute;
+    background-color: rgb(253 249 249 / 85%);
+    width: 80%;
+    bottom: 8px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.img-item
+{
+    cursor: pointer;
+}
+
+#lightbox-container
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.5) ;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-item
+{
+    position: relative;
+    width: 50%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-image: url("../image/a.jpeg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#close
+{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+#lightbox-item i 
+{
+    font-size: 22px;
+    cursor: pointer;
+}
